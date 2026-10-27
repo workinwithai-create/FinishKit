@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>FinishKit: finish your song from a 4-chord loop</title>
+<meta name="description" content="Type your BPM, key and chords, pick where you're stuck, and audition parts, sections, transitions, endings and feel moves on a full-song timeline. Grid-locked 48 kHz / 24-bit WAV and multitrack MIDI.">
+<meta name="theme-color" content="#14161c">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="tap" class="tap">
+  <div class="tapbox">
+    <h1>FinishKit</h1>
+    <p>Your loop is the start. FinishKit writes the rest of the song with you: parts, sections, transitions, endings and feel, on one timeline.</p>
+    <button id="tapBtn" class="big">Tap to start audio</button>
+    <p class="ios" hidden>On iPhone, flip the silent switch off (no orange) or you won't hear anything. Headphones work too.</p>
+    <p class="small">Nothing to sign up for. Your settings stay in this browser.</p>
+  </div>
+</div>
+<header>
+  <div class="brand"><b>FinishKit</b><span>finish my song</span></div>
+  <div class="transport">
+    <button id="play" class="primary">▶ Play song</button>
+    <button id="playSel">▶ From selected</button>
+    <button id="stopBtn">■ Stop</button>
+    <label class="chk"><input type="checkbox" id="loopSection"> Loop selected section</label>
+  </div>
+  <a id="buy" class="buy" target="_blank" rel="noopener">Checkout opening soon</a>
+</header>
+<p id="status" class="status" role="status">Tap to start audio.</p>
+<p id="loadStatus" class="load"></p>
+<p class="ios iosbar" hidden>iPhone: silent switch off, or use headphones.</p>
+<main>
+<section class="card" id="loopCard">
+  <h2><span class="n">1</span> Your loop</h2>
+  <div class="row">
+    <label>BPM <input id="bpm" type="number" min="60" max="180" step="1" inputmode="numeric"></label>
+    <label>Key <select id="key"></select></label>
+    <label>Mode <select id="mode"><option value="major">major</option><option value="minor">minor</option></select></label>
+    <label>Loop length <select id="loopBars"><option value="4">4 bars</option><option value="8">8 bars</option><option value="16">16 bars</option></select></label>
+  </div>
+  <label class="wide">Chords (4 is typical; up to 16, one per bar)<input id="chords" type="text" autocomplete="off" autocapitalize="characters" spellcheck="false" placeholder="Am F C G"></label>
+  <p id="chordErr" class="err"></p>
+  <div id="progs" class="chips"></div>
+</section>
+
+<section class="card" id="stuckCard">
+  <h2><span class="n">2</span> Where are you stuck?</h2>
+  <div id="stuck" class="stuck"></div>
+</section>
+
+<section class="card" id="sugCard">
+  <h2><span class="n">3</span> Recommended moves <small id="sugFor"></small></h2>
+  <div id="audition" class="audition" hidden></div>
+  <div id="sugs" class="sugs"></div>
+  <details id="browse"><summary>Browse all moves</summary><input id="deskFind" type="search" placeholder="Used an old desk? Type its name (e.g. WalkFour)" aria-label="Find an old desk"><div id="cats" class="tabs"></div><div id="allMoves" class="sugs"></div></details>
+</section>
+
+<section class="card" id="tlCard">
+  <h2><span class="n">4</span> Your song <small id="songLen"></small></h2>
+  <div class="row tools">
+    <button id="autoArr">Auto-arrange from my loop</button>
+    <button id="autoSug">Auto-suggest for this section</button>
+    <button id="reroll">Re-roll unlocked</button>
+    <button id="addLoop">+ Loop section</button>
+  </div>
+  <div id="timeline" class="timeline" aria-label="Arrangement timeline"></div>
+  <div id="secPanel" class="secpanel"></div>
+</section>
+
+<section class="card" id="exportCard">
+  <h2><span class="n">5</span> Export</h2>
+  <div class="row">
+    <label><input type="radio" name="exm" value="mix"> Full mix (guide band + your moves)</label>
+    <label><input type="radio" name="exm" value="added"> Added parts only (to drop on your track)</label>
+  </div>
+  <div class="row">
+    <button id="exportWav" class="primary">Section WAV</button>
+    <button id="exportMid">Section MIDI</button>
+    <button id="exportSongWav">Whole song WAV</button>
+    <button id="exportSongMid">Whole song MIDI</button>
+    <button id="exportStems">Stems ZIP</button>
+  </div>
+  <p id="fileInfo" class="small"></p>
+</section>
+
+<section class="card" id="mixCard">
+  <h2>Mixer</h2>
+  <div id="mixer" class="mixer"></div>
+  <div class="row"><label class="slider">Master <input id="master" type="range" min="0" max="1.2" step="0.01"></label><label class="slider">Live play <input id="liveGain" type="range" min="0" max="1.5" step="0.01"></label></div>
+</section>
+
+<section class="card" id="liveCard">
+  <h2>Play along</h2>
+  <div class="row"><label>Sound <select id="liveInst"></select></label><button id="octDn">Oct −</button><span id="octLbl"></span><button id="octUp">Oct +</button></div>
+  <div id="pads" class="pads"></div>
+  <div id="keys" class="keys"></div>
+  <p class="small">Chord pads: keys 1–8. Scale notes: Q–P. Notes never start the transport; use Play.</p>
+</section>
+
+<section class="card" id="ioCard">
+  <h2>MIDI &amp; audio</h2>
+  <div class="row"><label>MIDI in <select id="midiIn"></select></label><label>MIDI out <select id="midiOut"></select></label></div>
+  <p id="midiNote" class="small"></p>
+  <div class="row"><label>Audio out <select id="audioOut"></select></label><label>Audio in <select id="audioIn"></select></label></div>
+  <p id="audioOutNote" class="small"></p>
+  <div class="row"><button id="inBtn">Turn input on</button><label class="chk"><input type="checkbox" id="monitor"> Monitor input (headphones)</label><div class="meterbox"><div id="meter"></div></div></div>
+  <p id="inState" class="small">Input off.</p>
+</section>
+
+<section class="card" id="licCard">
+  <h2>License</h2>
+  <p id="licState"></p>
+  <div class="row"><input id="licKey" placeholder="License key" autocomplete="off"><button id="licBtn">Activate</button><button id="licOff" hidden>Deactivate</button></div>
+</section>
+</main>
+<footer><p>FinishKit by WorkinWithAI. Instruments: FluidR3 GM (pinned commit) via jsDelivr; acoustic kit Virtuosity Drums (CC0); shaker and tambourine VSCO 2 CE (CC0). <a href="samples/CREDITS.md">Credits</a></p></footer>
+<script src="app.js"></script>
+</body>
+</html>

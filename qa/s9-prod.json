@@ -1,0 +1,1250 @@
+{
+ "live_ctx": {
+  "sampleRate": 44100,
+  "state": "running",
+  "load": "All 34 samples for this song are loaded (34 in memory)."
+ },
+ "c1": {
+  "file": "finishkit-your-loop-92bpm-Am.wav",
+  "sr": 48000,
+  "bits": 24,
+  "ch": 2,
+  "frames": 1001739,
+  "expected": 1001739,
+  "peak_dBFS": -1.1,
+  "first_sample_over_1pct_peak": 0,
+  "first_transient_ms": 0.0,
+  "drums_only_first_onset_5pct_ms": 0.396,
+  "level_first_1ms_dBFS": -17.54,
+  "pass": true
+ },
+ "c1_other_lengths": {
+  "60bpm_4bars": {
+   "frames": 768000,
+   "expected": 768000,
+   "peak_dBFS": -1.1
+  },
+  "180bpm_16bars": {
+   "frames": 1024000,
+   "expected": 1024000,
+   "peak_dBFS": -1.1
+  },
+  "137bpm_8bars": {
+   "frames": 672701,
+   "expected": 672701,
+   "peak_dBFS": -1.1
+  }
+ },
+ "c1_other_pass": true,
+ "c2": {
+  "total_frames_4x": 4006956,
+  "expected_4x": 4006956,
+  "drift_samples": 0,
+  "kick_downbeat_onsets_32bars_samples": [
+   16,
+   17
+  ],
+  "onset_spread_within_same_chord_bars": 1,
+  "onset_trend_samples_over_32_bars": -0.434,
+  "seam_vs_continuous_render": {
+   "N1": 1001739,
+   "N2": 2003478,
+   "maxdiff_tiled_vs_continuous_rel": 0.006510381131833888,
+   "maxdiff_within_10ms_of_seam_rel": 1.1371146489022068e-07
+  },
+  "seam_abs_sample_step": [
+   0.00447,
+   0.00447,
+   0.00447
+  ],
+  "sample_step_p99.99_in_file": 0.19211,
+  "deterministic_maxdiff": 2.3841860752327193e-07,
+  "pass": true
+ },
+ "determinism": {
+  "events": 172,
+  "event_lists_identical": true,
+  "repeat_render_maxdiff": 2.3841860752327193e-07,
+  "repeat_render_maxdiff_LSB24": 2.0,
+  "repeat_render_maxdiff_dBFS": -132.5,
+  "note": "Chrome sums node inputs in an unspecified order, so float32 rounding can differ by ~1e-7 between renders; bound is -120 dBFS (CHORDLOCK used 1 LSB)",
+  "pass": true
+ },
+ "c6": {
+  "strings_60bpm": {
+   "note_s": 4.0,
+   "rms_30-50%": 0.1914,
+   "rms_92-99%": 0.2284,
+   "end/mid": 1.194
+  },
+  "organ_60bpm": {
+   "note_s": 4.0,
+   "rms_30-50%": 0.1557,
+   "rms_92-99%": 0.1644,
+   "end/mid": 1.057
+  },
+  "pass": true
+ },
+ "midi": {
+  "loop": {
+   "type": 1,
+   "tracks": [
+    "FinishKit 92 BPM Am",
+    "Guide keys (your loop)",
+    "Guide bass (your loop)",
+    "Guide drums (your loop)"
+   ],
+   "tempo_bpm": 92.0,
+   "timesig": [
+    "4/4"
+   ],
+   "markers": [
+    "Your loop: Am F C G Am F C G"
+   ],
+   "length_s": 20.8696,
+   "notes_per_track": [
+    0,
+    48,
+    24,
+    100
+   ],
+   "channels": [
+    1,
+    2,
+    10
+   ],
+   "programs": [
+    0,
+    33
+   ],
+   "file": "finishkit-your-loop-92bpm-Am.mid",
+   "expected_s": 20.8696
+  },
+  "arranged_song": {
+   "type": 1,
+   "tracks": [
+    "FinishKit 92 BPM Am",
+    "Guide keys (your loop)",
+    "Guide bass (your loop)",
+    "Guide drums (your loop)",
+    "Bass line",
+    "Comp",
+    "Pad / strings",
+    "Counter-line",
+    "Figure",
+    "Drum moves (fills, ghosts)",
+    "Percussion (shaker, tambourine)"
+   ],
+   "tempo_bpm": 92.0,
+   "timesig": [
+    "4/4"
+   ],
+   "markers": [
+    "Intro: Am F C G",
+    "Verse 1: Am F C G Am F C G",
+    "Pre-chorus: Dm Em F G",
+    "Chorus 1: Am F C G Am F C G",
+    "Post-chorus: Am F Am F",
+    "Verse 2: Am F C G Am F C G",
+    "Pre-chorus: Dm Em F G",
+    "Chorus 2: Am F C G Am F C G",
+    "Bridge / middle 8: C G Dm F C G Dm E",
+    "Build: Am F C G",
+    "Key change: Gb7 Bm G D A Bm G D A",
+    "Tag: D A D A Bm",
+    "Button ending: Bm"
+   ],
+   "length_s": 195.6522,
+   "notes_per_track": [
+    0,
+    431,
+    215,
+    856,
+    65,
+    3,
+    140,
+    20,
+    28,
+    85,
+    144
+   ],
+   "channels": [
+    1,
+    2,
+    3,
+    4,
+    7,
+    8,
+    10,
+    11
+   ],
+   "programs": [
+    0,
+    11,
+    32,
+    33,
+    40,
+    48
+   ],
+   "file": "finishkit-song-92bpm-Am.mid",
+   "expected_s": 195.6522,
+   "sections": [
+    "Intro",
+    "Verse 1",
+    "Pre-chorus",
+    "Chorus 1",
+    "Post-chorus",
+    "Verse 2",
+    "Pre-chorus",
+    "Chorus 2",
+    "Bridge / middle 8",
+    "Build",
+    "Key change",
+    "Tag",
+    "Button ending"
+   ]
+  }
+ },
+ "midi_pass": true,
+ "transport": {
+  "default_whole_song": {
+   "first_step": 0,
+   "max_step": 63,
+   "song_steps": 64,
+   "stopped_at_end": true,
+   "status": "End of the song. Press Play to hear it again."
+  },
+  "loop_section_opt_in": {
+   "steps_range": [
+    32,
+    63
+   ],
+   "wrapped": true,
+   "playing": true
+  },
+  "pass": true
+ },
+ "c4": {
+  "bpm": {
+   "heard_at_s_after_change": 0.136,
+   "one_bar_s": 2.609,
+   "pass": true
+  },
+  "mute_guide_bass": {
+   "heard_at_s_after_change": 0.37,
+   "one_bar_s": 2.0,
+   "pass": true
+  },
+  "move_option": {
+   "heard_at_s_after_change": 0.156,
+   "one_bar_s": 2.0,
+   "pass": true
+  },
+  "add_move": {
+   "heard_at_s_after_change": 0.172,
+   "one_bar_s": 2.0,
+   "pass": true
+  },
+  "key": {
+   "heard_at_s_after_change": 0.176,
+   "one_bar_s": 2.0,
+   "pass": true
+  },
+  "still_playing_no_restart": true,
+  "pass": true
+ },
+ "midi_out": {
+  "msgs_sent_while_playing": 452,
+  "channels": [
+   1,
+   3,
+   10
+  ],
+  "selected": "out1",
+  "pass": true
+ },
+ "stop": {
+  "ms": 31.80000001192093,
+  "peak": 0,
+  "active_after": 0,
+  "all_notes_off_channels": 16,
+  "pass": true
+ },
+ "c3": {
+  "hidden_s": 30,
+  "playing_on_return": false,
+  "steps_scheduled_while_hidden_and_after": 0,
+  "active_voices_after": 0,
+  "status": "Stopped because the tab was hidden. Press Play to start again.",
+  "pass": true
+ },
+ "midi_in": {
+  "vels": [
+   [
+    52,
+    30
+   ],
+   [
+    67,
+    120
+   ],
+   [
+    64,
+    100
+   ]
+  ],
+  "voices_after_noteoff_no_pedal": 0,
+  "held_after_noteoff_with_pedal": 1,
+  "sustain_flag": true,
+  "after_pedal_up": 0,
+  "playing_after_notes_and_0xFA": false,
+  "inputs": [
+   "(none)",
+   "Mock Keys 49"
+  ],
+  "outputs": [
+   "(none)",
+   "Mock Synth Out"
+  ],
+  "note": "Playing Piano (FluidR3 acoustic grand) from Mock Keys 49. Velocity and sustain (CC64) work. Notes never start the transport. Sending every chair on its own channel (drums on 10) to Mock Synth Out while playing.",
+  "pass": true
+ },
+ "keys": {
+  "log": [
+   [
+    1000,
+    "kbd"
+   ],
+   [
+    62,
+    "kbd"
+   ],
+   [
+    1001,
+    "ptr"
+   ],
+   [
+    65,
+    "ptr"
+   ]
+  ],
+  "playing_after": false,
+  "pass": true
+ },
+ "suggest": {
+  "by_stuck": {
+   "thin": {
+    "n": 8,
+    "top": [
+     "pad",
+     "comp",
+     "counter"
+    ],
+    "reason": "A string bed holds Am F C G under everything, so the loop stops sounding like four separate hits."
+   },
+   "verse2": {
+    "n": 5,
+    "top": [
+     "verse2",
+     "verse2",
+     "verse2"
+    ],
+    "reason": "Same Am F C G, but a violin answers in the holes the second time, so verse 2 tells the listener something new."
+   },
+   "chorus": {
+    "n": 7,
+    "top": [
+     "pre",
+     "build",
+     "lift"
+    ],
+    "reason": "A 4-bar pre-chorus on iv\u2013v\u2013bVI\u2013bVII climbs out of Dm and lands on your Am with a snare pickup."
+   },
+   "bridge": {
+    "n": 6,
+    "top": [
+     "bridge",
+     "bridge",
+     "bridge"
+    ],
+    "reason": "Move to the relative major (bIII) for 8 bars, then a V chord sends you back to Dm."
+   },
+   "harder": {
+    "n": 7,
+    "top": [
+     "last",
+     "keychange",
+     "drop"
+    ],
+    "reason": "Last chorus: strings, tambourine on 2 and 4, a crash every four bars. Same Am F C G, much bigger."
+   },
+   "ending": {
+    "n": 6,
+    "top": [
+     "tag",
+     "button",
+     "amen"
+    ],
+    "reason": "Say the last line twice, then land on i with a crash and a held chord."
+   },
+   "intro": {
+    "n": 4,
+    "top": [
+     "intro",
+     "intro",
+     "intro"
+    ],
+    "reason": "Four bars of Am F C G: keys first, then bass, then drums, with a fill into the first verse."
+   },
+   "feel": {
+    "n": 7,
+    "top": [
+     "ghost",
+     "pocket",
+     "shaker"
+    ],
+    "reason": "16th hats with accents on the and: at 120 BPM that's where the groove lives."
+   }
+  },
+  "pass": true
+ },
+ "audition": {
+  "move": "pad",
+  "loud": {
+   "a": 0.07908612137274179,
+   "b": 0.07958795119116838,
+   "makeup": 1.0063453588280225,
+   "db": 0.05494096020149112
+  },
+  "playing": true,
+  "ab_gain_A": 1.0063453912734985,
+  "moves_after_keep": 1,
+  "locked_move_seed_kept_on_reroll": true,
+  "locked_section_kept_on_auto_arrange": true,
+  "arranged_sections": 14,
+  "pass": true
+ },
+ "moves": {
+  "count": 38,
+  "by_category": {
+   "part": 9,
+   "section": 9,
+   "transition": 10,
+   "ending": 5,
+   "feel": 5
+  },
+  "browse_cards_by_category": {
+   "part": 9,
+   "section": 9,
+   "transition": 10,
+   "ending": 5,
+   "feel": 5
+  },
+  "failed": [],
+  "detail": {
+   "bass": {
+    "cat": "part",
+    "bars": 8,
+    "events": 180,
+    "frames": 1001739,
+    "expected": 1001739,
+    "peak_dBFS": -1.1,
+    "midi_type": 1,
+    "midi_len_ok": true,
+    "midi_notes": 180,
+    "pass": true
+   },
+   "comp": {
+    "cat": "part",
+    "bars": 8,
+    "events": 169,
+    "frames": 1001739,
+    "expected": 1001739,
+    "peak_dBFS": -1.1,
+    "midi_type": 1,
+    "midi_len_ok": true,
+    "midi_notes": 145,
+    "pass": true
+   },
+   "strum": {
+    "cat": "part",
+    "bars": 8,
+    "events": 388,
+    "frames": 1001739,
+    "expected": 1001739,
+    "peak_dBFS": -1.1,
+    "midi_type": 1,
+    "midi_len_ok": true,
+    "midi_notes": 364,
+    "pass": true
+   },
+   "counter": {
+    "cat": "part",
+    "bars": 8,
+    "events": 188,
+    "frames": 1001739,
+    "expected": 1001739,
+    "peak_dBFS": -1.1,
+    "midi_type": 1,
+    "midi_len_ok": true,
+    "midi_notes": 164,
+    "pass": true
+   },
+   "harmony": {
+    "cat": "part",
+    "bars": 8,
+    "events": 190,
+    "frames": 1001739,
+    "expected": 1001739,
+    "peak_dBFS": -1.1,
+    "midi_type": 1,
+    "midi_len_ok": true,
+    "midi_notes": 166,
+    "pass": true
+   },
+   "organ": {
+    "cat": "part",
+    "bars": 8,
+    "events": 196,
+    "frames": 1001739,
+    "expected": 1001739,
+    "peak_dBFS": -1.1,
+    "midi_type": 1,
+    "midi_len_ok": true,
+    "midi_notes": 172,
+    "pass": true
+   },
+   "figure": {
+    "cat": "part",
+    "bars": 8,
+    "events": 236,
+    "frames": 1001739,
+    "expected": 1001739,
+    "peak_dBFS": -1.1,
+    "midi_type": 1,
+    "midi_len_ok": true,
+    "midi_notes": 212,
+    "pass": true
+   },
+   "hook": {
+    "cat": "part",
+    "bars": 8,
+    "events": 212,
+    "frames": 1001739,
+    "expected": 1001739,
+    "peak_dBFS": -1.1,
+    "midi_type": 1,
+    "midi_len_ok": true,
+    "midi_notes": 188,
+    "pass": true
+   },
+   "pad": {
+    "cat": "part",
+    "bars": 8,
+    "events": 196,
+    "frames": 1001739,
+    "expected": 1001739,
+    "peak_dBFS": -1.1,
+    "midi_type": 1,
+    "midi_len_ok": true,
+    "midi_notes": 172,
+    "pass": true
+   },
+   "intro": {
+    "cat": "section",
+    "bars": 12,
+    "events": 218,
+    "frames": 1502609,
+    "expected": 1502609,
+    "peak_dBFS": -1.1,
+    "midi_type": 1,
+    "midi_len_ok": true,
+    "midi_notes": 191,
+    "pass": true
+   },
+   "verse2": {
+    "cat": "section",
+    "bars": 16,
+    "events": 336,
+    "frames": 2003478,
+    "expected": 2003478,
+    "peak_dBFS": -1.1,
+    "midi_type": 1,
+    "midi_len_ok": true,
+    "midi_notes": 288,
+    "pass": true
+   },
+   "pre": {
+    "cat": "section",
+    "bars": 12,
+    "events": 302,
+    "frames": 1502609,
+    "expected": 1502609,
+    "peak_dBFS": -1.1,
+    "midi_type": 1,
+    "midi_len_ok": true,
+    "midi_notes": 246,
+    "pass": true
+   },
+   "bridge": {
+    "cat": "section",
+    "bars": 16,
+    "events": 333,
+    "frames": 2003478,
+    "expected": 2003478,
+    "peak_dBFS": -1.1,
+    "midi_type": 1,
+    "midi_len_ok": true,
+    "midi_notes": 293,
+    "pass": true
+   },
+   "post": {
+    "cat": "section",
+    "bars": 12,
+    "events": 287,
+    "frames": 1502609,
+    "expected": 1502609,
+    "peak_dBFS": -1.1,
+    "midi_type": 1,
+    "midi_len_ok": true,
+    "midi_notes": 251,
+    "pass": true
+   },
+   "last": {
+    "cat": "section",
+    "bars": 16,
+    "events": 387,
+    "frames": 2003478,
+    "expected": 2003478,
+    "peak_dBFS": -1.1,
+    "midi_type": 1,
+    "midi_len_ok": true,
+    "midi_notes": 339,
+    "pass": true
+   },
+   "keychange": {
+    "cat": "section",
+    "bars": 17,
+    "events": 399,
+    "frames": 2128696,
+    "expected": 2128696,
+    "peak_dBFS": -1.1,
+    "midi_type": 1,
+    "midi_len_ok": true,
+    "midi_notes": 348,
+    "pass": true
+   },
+   "cadence": {
+    "cat": "section",
+    "bars": 12,
+    "events": 243,
+    "frames": 1502609,
+    "expected": 1502609,
+    "peak_dBFS": -1.1,
+    "midi_type": 1,
+    "midi_len_ok": true,
+    "midi_notes": 215,
+    "pass": true
+   },
+   "solo": {
+    "cat": "section",
+    "bars": 16,
+    "events": 403,
+    "frames": 2003478,
+    "expected": 2003478,
+    "peak_dBFS": -1.1,
+    "midi_type": 1,
+    "midi_len_ok": true,
+    "midi_notes": 355,
+    "pass": true
+   },
+   "build": {
+    "cat": "transition",
+    "bars": 12,
+    "events": 377,
+    "frames": 1502609,
+    "expected": 1502609,
+    "peak_dBFS": -1.1,
+    "midi_type": 1,
+    "midi_len_ok": true,
+    "midi_notes": 321,
+    "pass": true
+   },
+   "drop": {
+    "cat": "transition",
+    "bars": 16,
+    "events": 362,
+    "frames": 2003478,
+    "expected": 2003478,
+    "peak_dBFS": -1.1,
+    "midi_type": 1,
+    "midi_len_ok": true,
+    "midi_notes": 275,
+    "pass": true
+   },
+   "brk": {
+    "cat": "transition",
+    "bars": 12,
+    "events": 242,
+    "frames": 1502609,
+    "expected": 1502609,
+    "peak_dBFS": -1.1,
+    "midi_type": 1,
+    "midi_len_ok": true,
+    "midi_notes": 218,
+    "pass": true
+   },
+   "fill": {
+    "cat": "transition",
+    "bars": 8,
+    "events": 174,
+    "frames": 1001739,
+    "expected": 1001739,
+    "peak_dBFS": -1.1,
+    "midi_type": 1,
+    "midi_len_ok": true,
+    "midi_notes": 150,
+    "pass": true
+   },
+   "stop": {
+    "cat": "transition",
+    "bars": 8,
+    "events": 48,
+    "frames": 1001739,
+    "expected": 1001739,
+    "peak_dBFS": -1.1,
+    "midi_type": 1,
+    "midi_len_ok": true,
+    "midi_notes": 40,
+    "pass": true
+   },
+   "half": {
+    "cat": "transition",
+    "bars": 8,
+    "events": 116,
+    "frames": 1001739,
+    "expected": 1001739,
+    "peak_dBFS": -1.1,
+    "midi_type": 1,
+    "midi_len_ok": true,
+    "midi_notes": 100,
+    "pass": true
+   },
+   "lift": {
+    "cat": "transition",
+    "bars": 8,
+    "events": 170,
+    "frames": 1001739,
+    "expected": 1001739,
+    "peak_dBFS": -1.1,
+    "midi_type": 1,
+    "midi_len_ok": true,
+    "midi_notes": 148,
+    "pass": true
+   },
+   "slide": {
+    "cat": "transition",
+    "bars": 8,
+    "events": 171,
+    "frames": 1001739,
+    "expected": 1001739,
+    "peak_dBFS": -1.1,
+    "midi_type": 1,
+    "midi_len_ok": true,
+    "midi_notes": 149,
+    "pass": true
+   },
+   "tension": {
+    "cat": "transition",
+    "bars": 8,
+    "events": 188,
+    "frames": 1001739,
+    "expected": 1001739,
+    "peak_dBFS": -1.1,
+    "midi_type": 1,
+    "midi_len_ok": true,
+    "midi_notes": 188,
+    "pass": true
+   },
+   "turn": {
+    "cat": "transition",
+    "bars": 8,
+    "events": 174,
+    "frames": 1001739,
+    "expected": 1001739,
+    "peak_dBFS": -1.1,
+    "midi_type": 1,
+    "midi_len_ok": true,
+    "midi_notes": 150,
+    "pass": true
+   },
+   "tag": {
+    "cat": "ending",
+    "bars": 13,
+    "events": 268,
+    "frames": 1627826,
+    "expected": 1627826,
+    "peak_dBFS": -1.1,
+    "midi_type": 1,
+    "midi_len_ok": true,
+    "midi_notes": 231,
+    "pass": true
+   },
+   "button": {
+    "cat": "ending",
+    "bars": 9,
+    "events": 179,
+    "frames": 1126957,
+    "expected": 1126957,
+    "peak_dBFS": -1.1,
+    "midi_type": 1,
+    "midi_len_ok": true,
+    "midi_notes": 155,
+    "pass": true
+   },
+   "fade": {
+    "cat": "ending",
+    "bars": 16,
+    "events": 366,
+    "frames": 2003478,
+    "expected": 2003478,
+    "peak_dBFS": -1.1,
+    "midi_type": 1,
+    "midi_len_ok": true,
+    "midi_notes": 318,
+    "pass": true
+   },
+   "amen": {
+    "cat": "ending",
+    "bars": 12,
+    "events": 212,
+    "frames": 1502609,
+    "expected": 1502609,
+    "peak_dBFS": -1.1,
+    "midi_type": 1,
+    "midi_len_ok": true,
+    "midi_notes": 184,
+    "pass": true
+   },
+   "rideout": {
+    "cat": "ending",
+    "bars": 16,
+    "events": 381,
+    "frames": 2003478,
+    "expected": 2003478,
+    "peak_dBFS": -1.1,
+    "midi_type": 1,
+    "midi_len_ok": true,
+    "midi_notes": 335,
+    "pass": true
+   },
+   "ghost": {
+    "cat": "feel",
+    "bars": 8,
+    "events": 204,
+    "frames": 1001739,
+    "expected": 1001739,
+    "peak_dBFS": -1.1,
+    "midi_type": 1,
+    "midi_len_ok": true,
+    "midi_notes": 180,
+    "pass": true
+   },
+   "space": {
+    "cat": "feel",
+    "bars": 8,
+    "events": 72,
+    "frames": 1001739,
+    "expected": 1001739,
+    "peak_dBFS": -1.1,
+    "midi_type": 1,
+    "midi_len_ok": true,
+    "midi_notes": 64,
+    "pass": true
+   },
+   "pocket": {
+    "cat": "feel",
+    "bars": 8,
+    "events": 172,
+    "frames": 1001739,
+    "expected": 1001739,
+    "peak_dBFS": -1.1,
+    "midi_type": 1,
+    "midi_len_ok": true,
+    "midi_notes": 148,
+    "pass": true
+   },
+   "shaker": {
+    "cat": "feel",
+    "bars": 8,
+    "events": 316,
+    "frames": 1001739,
+    "expected": 1001739,
+    "peak_dBFS": -1.1,
+    "midi_type": 1,
+    "midi_len_ok": true,
+    "midi_notes": 292,
+    "pass": true
+   },
+   "room": {
+    "cat": "feel",
+    "bars": 8,
+    "events": 172,
+    "frames": 1001739,
+    "expected": 1001739,
+    "peak_dBFS": -1.1,
+    "midi_type": 1,
+    "midi_len_ok": true,
+    "midi_notes": 148,
+    "pass": true
+   }
+  },
+  "old_desk_lookup": {
+   "desks_found": 137,
+   "desks_total": 137,
+   "missing": [],
+   "walkfour_added": {
+    "id": "bass",
+    "opts": {
+     "style": "walk",
+     "i": "upright"
+    },
+    "added": 1
+   }
+  },
+  "pass": true
+ },
+ "audio_io": {
+  "inputs": [
+   "System default input",
+   "Fake Audio Input 1",
+   "Fake Audio Input 2"
+  ],
+  "outputs": [
+   "System default",
+   "Fake Audio Output 1",
+   "Fake Audio Output 2"
+  ],
+  "setSinkId_supported": true,
+  "in_state": "Input on: Fake Default Audio Input \u00b7 meter only.",
+  "meter_max_pct_3s": 6.25102,
+  "sink_after_select": "842839b9085543b00a69d67674803bf4a7914b0d3627a97dbbe05745299515b7",
+  "out_note": "Playing through the selected output.",
+  "volume_sliders": 16,
+  "pass": true
+ },
+ "persist": {
+  "equal_after_reload": true,
+  "sample": {
+   "bpm": "128",
+   "chords": "Dm Bb F C",
+   "key": "2",
+   "mode": "minor",
+   "sections": 13,
+   "loopSection": true,
+   "midiOut": "out1"
+  },
+  "pass": true
+ },
+ "license": {
+  "buy": "Checkout opening soon \u00b7 $39 once",
+  "config": {
+   "checkoutUrl": "",
+   "storeId": null,
+   "productId": null,
+   "price": "$39 once"
+  },
+  "activate_msg": "Checkout opening soon. License keys can't be checked until the store is live.",
+  "whole_song_gate": "Whole-song export is in the licensed version ($39 once).",
+  "stems_gate": "The stems ZIP is in the licensed version ($39 once).",
+  "pass": true,
+  "free_section_download": {
+   "file": "finishkit-verse-1-128bpm-Dm.wav",
+   "frames": 720000
+  }
+ },
+ "c5": {
+  "external_hosts": [
+   "cdn.jsdelivr.net"
+  ],
+  "sample_urls_pinned": true,
+  "sample_requests": 202
+ },
+ "c7": {
+  "@main/@gh-pages": 0,
+  "FluidR3_pinned_sha": [
+   "044fab8e1456bfafc5776e86dfd6bb8697149aef"
+  ],
+  "Math.random_total": 0,
+  "Math.random_export_path": 0,
+  "setTimeout_used_for_notes": 0,
+  "compressor_in_export_path": 0,
+  "AudioContext_forced_rate": 0,
+  "LOOKAHEAD_MS=25": true,
+  "SCHEDULE_AHEAD=0.12": true,
+  "auth_or_db": 0,
+  "ios_silent_note": true,
+  "voice_name_mismatches": [],
+  "voices": {
+   "inst": [
+    [
+     "piano",
+     "acoustic_grand_piano",
+     "Piano (FluidR3 acoustic grand)"
+    ],
+    [
+     "epiano",
+     "electric_piano_1",
+     "Electric piano (FluidR3 EP 1)"
+    ],
+    [
+     "organ",
+     "drawbar_organ",
+     "Drawbar organ (FluidR3)"
+    ],
+    [
+     "nylon",
+     "acoustic_guitar_nylon",
+     "Nylon guitar (FluidR3)"
+    ],
+    [
+     "steel",
+     "acoustic_guitar_steel",
+     "Steel-string acoustic (FluidR3)"
+    ],
+    [
+     "muted",
+     "electric_guitar_muted",
+     "Muted electric guitar (FluidR3)"
+    ],
+    [
+     "drive",
+     "overdriven_guitar",
+     "Overdriven guitar (FluidR3)"
+    ],
+    [
+     "upright",
+     "acoustic_bass",
+     "Upright bass (FluidR3 acoustic bass)"
+    ],
+    [
+     "finger",
+     "electric_bass_finger",
+     "Finger bass (FluidR3 electric bass)"
+    ],
+    [
+     "strings",
+     "string_ensemble_1",
+     "String ensemble (FluidR3)"
+    ],
+    [
+     "choir",
+     "choir_aahs",
+     "Choir aahs (FluidR3)"
+    ],
+    [
+     "violin",
+     "violin",
+     "Violin (FluidR3)"
+    ],
+    [
+     "cello",
+     "cello",
+     "Cello (FluidR3)"
+    ],
+    [
+     "trumpet",
+     "trumpet",
+     "Trumpet (FluidR3)"
+    ],
+    [
+     "sax",
+     "alto_sax",
+     "Alto sax (FluidR3)"
+    ],
+    [
+     "flute",
+     "flute",
+     "Flute (FluidR3)"
+    ],
+    [
+     "harmonica",
+     "harmonica",
+     "Harmonica (FluidR3)"
+    ],
+    [
+     "horn",
+     "french_horn",
+     "French horn (FluidR3)"
+    ],
+    [
+     "marimba",
+     "marimba",
+     "Marimba (FluidR3)"
+    ],
+    [
+     "glock",
+     "glockenspiel",
+     "Glockenspiel (FluidR3)"
+    ],
+    [
+     "vibes",
+     "vibraphone",
+     "Vibraphone (FluidR3)"
+    ],
+    [
+     "harp",
+     "orchestral_harp",
+     "Concert harp (FluidR3 orchestral harp)"
+    ],
+    [
+     "pizz",
+     "pizzicato_strings",
+     "Pizzicato strings (FluidR3)"
+    ]
+   ],
+   "kit": [
+    [
+     "kick",
+     "kick",
+     "Acoustic kit: kick (Virtuosity Drums)"
+    ],
+    [
+     "snare",
+     "snare",
+     "Acoustic kit: snare (Virtuosity Drums)"
+    ],
+    [
+     "ghost",
+     "ghost",
+     "Acoustic kit: soft snare (Virtuosity Drums)"
+    ],
+    [
+     "rim",
+     "rim",
+     "Acoustic kit: cross-stick rim click (Virtuosity Drums)"
+    ],
+    [
+     "hat",
+     "hat",
+     "Acoustic kit: closed hi-hat (Virtuosity Drums)"
+    ],
+    [
+     "ohat",
+     "ohat",
+     "Acoustic kit: open hi-hat (Virtuosity Drums)"
+    ],
+    [
+     "ride",
+     "ride",
+     "Acoustic kit: ride (Virtuosity Drums)"
+    ],
+    [
+     "crash",
+     "crash",
+     "Acoustic kit: crash (Virtuosity Drums)"
+    ],
+    [
+     "htom",
+     "htom",
+     "Acoustic kit: high tom (Virtuosity Drums)"
+    ],
+    [
+     "ltom",
+     "ltom",
+     "Acoustic kit: low tom (Virtuosity Drums)"
+    ],
+    [
+     "shaker",
+     "shaker",
+     "Shaker (VSCO 2 CE)"
+    ],
+    [
+     "tamb",
+     "tamb",
+     "Tambourine (VSCO 2 CE)"
+    ]
+   ]
+  },
+  "fluid_dirs_requested": [
+   "acoustic_bass",
+   "acoustic_grand_piano",
+   "acoustic_guitar_nylon",
+   "alto_sax",
+   "cello",
+   "choir_aahs",
+   "drawbar_organ",
+   "electric_bass_finger",
+   "electric_piano_1",
+   "marimba",
+   "string_ensemble_1",
+   "vibraphone",
+   "violin"
+  ],
+  "requested_dirs_all_declared": true,
+  "pass": true
+ },
+ "errors": [],
+ "blocked_host": {
+  "loadStatus": "Missing instruments: Piano (FluidR3 acoustic grand), Finger bass (FluidR3 electric bass). Playback and export are off until they load. Check your connection (or unblock cdn.jsdelivr.net) and reload.",
+  "play_status": "Audio on. Pick where you're stuck, audition a move, or press Play song.",
+  "export_error": "Missing instruments: Piano (FluidR3 acoustic grand), Finger bass (FluidR3 electric bass)",
+  "playing": false,
+  "errors": [],
+  "pass": true
+ },
+ "mobile": {
+  "iPhone 13": {
+   "viewport": {
+    "width": 390,
+    "height": 664
+   },
+   "ios_silent_note_shown": true,
+   "ctx": "running",
+   "steps_scheduled_1_5s": 10,
+   "no_horizontal_overflow": true,
+   "scrollW": 390,
+   "innerW": 390,
+   "errors": [],
+   "pass": true
+  },
+  "Pixel 7": {
+   "viewport": {
+    "width": 412,
+    "height": 839
+   },
+   "ios_silent_note_shown": false,
+   "ctx": "running",
+   "steps_scheduled_1_5s": 10,
+   "no_horizontal_overflow": true,
+   "scrollW": 412,
+   "innerW": 412,
+   "errors": [],
+   "pass": true
+  }
+ },
+ "summary": {
+  "c1": true,
+  "c2": true,
+  "determinism": true,
+  "c6": true,
+  "transport": true,
+  "c4": true,
+  "midi_out": true,
+  "stop": true,
+  "c3": true,
+  "midi_in": true,
+  "keys": true,
+  "suggest": true,
+  "audition": true,
+  "moves": true,
+  "audio_io": true,
+  "persist": true,
+  "license": true,
+  "c7": true,
+  "blocked_host": true,
+  "midi_pass": true,
+  "c1_other_pass": true,
+  "no_page_errors": true
+ }
+}

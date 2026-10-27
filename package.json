@@ -1,0 +1,9 @@
+{
+  "name": "finishkit",
+  "version": "1.0.0",
+  "private": true,
+  "description": "FinishKit: finish your song from a 4-chord loop. Static Web Audio app.",
+  "scripts": {
+    "build": "rm -rf dist && mkdir -p dist && cp -r index.html app.js styles.css samples dist/"
+  }
+}
